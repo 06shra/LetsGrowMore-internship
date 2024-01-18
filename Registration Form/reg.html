@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <center>
+        <h1>Student Enrollment Form</h1>
+        <table border="4">
+            <thead>
+                <tr>
+                    <th>Fisrt Name</th>
+                    <td><input type="text" name="fname" id="fname"></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Last Name</th>
+                    <td><input type="text" name="lname" id="lname"></td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><input type="text" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <th>Mobile no</th>
+                    <td><input type="number" name="mobileno" id="mbl"></td>
+                </tr>
+                <tr>
+                    <th>Age</th>
+                    <td><input type="text" name="age" id="age"></td>
+                </tr>
+                <tr id="btna">
+                    <td colspan="2"><input type="button" name="button" id="btn" value="Enroll Student" onclick="AddRow()"></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <h1>Enrolled Students</h1>
+        <table border="4" id="show">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Mobile no</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+        </table>
+    </center>
+    <script src="reg.js"></script>
+</body>
+</html>
